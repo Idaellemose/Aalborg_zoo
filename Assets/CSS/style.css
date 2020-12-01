@@ -20,13 +20,56 @@ body {
 
 header {
     background-color: aliceblue;
+    padding: 10px;
+
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+    
     grid-area: header;
 }
 
-
 nav {
-    /* background-color: antiquewhite; */
+	margin: 0;
+	padding: 0;
 }
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 2rem;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+nav.top ul {
+	float: right;
+}
+
+nav.top ul li {
+	display: inline-block;
+	padding: 5px 0;
+}
+
+nav.top ul li a {
+	padding: 1rem 0;
+	margin: 0;
+	color: #000000;
+
+	/* background: lightblue; */
+}
+
 
 main {
     background-color: aquamarine;
