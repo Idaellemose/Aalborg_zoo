@@ -8,13 +8,14 @@ body {
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1.2fr 0.8fr;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-template-areas: 
-        "header header header header"
-        "main main main aside"
-        "section1 section2 section3 aside"
-        "footer footer footer footer";
+        "header header header header header header header header header header header header"
+        "hero hero hero hero hero hero hero hero hero hero hero hero"
+        "main main main main main main main main main main main main"
+        "section1 section1 section1 section1 section1 section1 section1 section1 section1 section1 section1 section1"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-gap: 0.2rem;
 }
 
@@ -68,6 +69,10 @@ nav.top ul li a {
 	color: #000000;
 
 	/* background: lightblue; */
+}
+
+.hero-section {
+    grid-area: hero;
 }
 
 
